@@ -1,6 +1,11 @@
-body {
+.resume {
   font-family: 'Crimson Text', serif;
   color: black;
+  margin: 0.5in;
+  padding: 1in;
+  height: 11in;
+  width: 8.5in;
+  box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.1);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -10,4 +15,29 @@ h1,h2,h3,h4,h5,h6 {
 a {
   text-decoration: none;
   color: black;
+}
+
+#personal-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.personal-project {
+  grid-column: span 1;
+}
+
+.contact-details {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-details li {
+  display: inline;
+}
+
+.contact-details li::before {
+  content: " | ";
+}
+.contact-details li::after {
+  content: " | ";
 }
