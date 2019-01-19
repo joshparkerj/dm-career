@@ -10,6 +10,19 @@
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+section {
+  margin-bottom: 1em;
 }
 
 a {
@@ -17,9 +30,13 @@ a {
   color: black;
 }
 
-#personal-projects {
+.two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.two-col h2 {
+	grid-column: span 2;
 }
 
 .personal-project {
