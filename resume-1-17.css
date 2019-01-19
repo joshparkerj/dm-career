@@ -8,17 +8,21 @@
   box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.1);
 }
 
+ul {
+  list-style-type: none;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
 
 h1 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 h2 {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 section {
@@ -36,7 +40,7 @@ a {
 }
 
 .two-col h2 {
-	grid-column: span 2;
+  grid-column: span 2;
 }
 
 .personal-project {
@@ -44,17 +48,27 @@ a {
 }
 
 .contact-details {
-  list-style-type: none;
+  padding: 0.5em 0;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 
-.contact-details li {
+#skills ul li {
   display: inline;
 }
 
-.contact-details li::before {
-  content: " | ";
+#skills ul li:after {
+  content: ", ";
 }
-.contact-details li::after {
-  content: " | ";
+
+#skills ul li.last:after {
+  content: ".";
 }
